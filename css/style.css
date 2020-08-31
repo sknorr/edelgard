@@ -1,0 +1,431 @@
+main {
+  font-weight: 400;
+}
+
+main a {
+  color: #34B262;
+}
+
+.ds-message {
+  background-color: #F7F7F7;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 2rem;
+  margin: 1rem 0;
+}
+
+.ds-error {
+  background-color: #FF8E77;
+  color: #0C322C;
+}
+
+.ds-sorry {
+  background-color: #7AD4AA;
+  color: #0C322C;
+}
+
+.ds-crumb {
+  background-color: #F7F7F7;
+  padding: 1rem 0;
+  position: relative;
+}
+
+.ds-crumb span {
+  display: inline-block;
+  padding: 0;
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+.ds-crumb span::after {
+  content: '/';
+  color: #7AD4AA;
+  display: inline-block;
+  padding: 0 2rem;
+}
+
+.ds-crumb span:last-child::after {
+  content: none;
+}
+
+.ds-crumb a {
+  color: #0C322C;
+}
+
+div.ds-page-wrap {
+  padding-top: 6rem;
+  padding-bottom: 8rem;
+}
+
+h1.ds-title {
+  font-weight: 500;
+  text-align: left;
+  font-size: 6rem;
+  line-height: 1;
+  margin-bottom: 30px;
+  color: #0C322C;
+  max-width: 90rem;
+}
+
+h3.ds-select,
+h4.ds-select {
+  color: #0C322C;
+}
+
+h4.ds-select {
+  margin: 3rem 0 2rem;
+}
+
+div.ds-page-desc > p,
+div.ds-docset-desc > p {
+  text-align: left;
+  font-size: 1.6rem;
+  color: #0C322C;
+  max-width: 90rem;
+}
+
+div.ds-search-alternate-bg {
+  background-color: #7AD4AA;
+}
+
+div.ds-alternate-bg {
+  background-color: #F7F7F7;
+}
+
+div.ds-search-alternate-bg > .container,
+div.ds-alternate-bg > .container {
+  padding-top: 4rem;
+}
+
+div.ds-boring-bg {
+  margin-bottom: 6rem;
+}
+
+div.ds-select-list-outer {
+  margin: 1rem 0;
+  padding: 2rem 0;
+  border-radius: 2rem;
+  position: relative;
+  background-color: #FFF;
+  box-shadow: 0 2px 4px 0 rgba(87,89,95,0.4);
+}
+
+div.ds-select-list {
+  margin: 0 1rem;
+  height: 40rem;
+  overflow: auto;
+  position: relative;
+}
+
+div.ds-select-list > a {
+  display: block;
+  color: #0C322C;
+  border: none;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 1rem 1.25rem;
+  box-sizing: border-box;
+  outline: none;
+}
+
+div.ds-select-list > a:hover,
+div.ds-select-list > a:focus,
+div.ds-select-list > a:active,
+div.ds-select-list > a.ds-selected {
+  background-color: #7AD4AA;
+  text-decoration: none;
+}
+
+div.ds-select-instruction {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 2rem;
+  /* let's assume there will only ever be a single line here. boundtofail. */
+  position: absolute;
+  top: calc(50% - 1rem);
+  text-align: center;
+}
+
+div.ds-select-instruction::before {
+  content: '(';
+}
+
+div.ds-select-instruction::after {
+  content: ')';
+}
+
+body.ds-fold-selector h3.ds-select {
+  display: none;
+}
+
+body.ds-fold-selector div.ds-select-list {
+  height: 4rem;
+  overflow: hidden;
+}
+
+body.ds-fold-selector div.ds-select-list a:not(.ds-selected) {
+  display: none;
+}
+
+h2.ds-docset-title {
+  font-size: 6rem;
+  margin-bottom: 4rem;
+  font-weight: 500;
+  color: #0C322C;
+  max-width: 90rem;
+}
+
+div.ds-docset-category {
+  margin-top: 4rem;
+  clear: both;
+}
+
+div.ds-docset-category.ds-category-no-title {
+  margin-top: 8rem;
+  clear: both;
+}
+
+h3.ds-docset-category-title {
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+  clear: both;
+}
+
+div.ds-docset-category p {
+  font-size: 14px;
+}
+
+table.ds-docset-table {
+  width: 100%;
+  margin-top: 2rem;
+  font-size: 14px;
+  clear: both;
+}
+
+table.ds-docset-table tr td {
+  background-color: #F7F7F7;
+}
+
+table.ds-docset-table tr:nth-child(2n) td {
+  background-color: #FFF;
+}
+
+table.ds-docset-table td {
+  border-bottom: .3rem solid #FFF;
+  border-right: .3rem solid #FFF;
+  padding: .5rem 1rem;
+}
+
+table.ds-docset-table td:nth-last-child(1) {
+  border-right: none;
+}
+
+table.ds-docset-table td {
+  width: 10%;
+}
+
+table.ds-docset-table td:first-child {
+  border-radius: 10px 0 0 10px;
+}
+
+table.ds-docset-table td:last-child {
+  border-radius: 0 10px 10px 0;
+}
+
+table.ds-docset-table td.ds-docset-table-title {
+  width: 45%;
+}
+
+table.ds-docset-table td.ds-docset-table-language {
+  width: 15%;
+  border-radius: 10px;
+}
+table.ds-docset-table td.ds-docset-table-language.ds-has-language-selector {
+  padding: 0;
+}
+
+select.ds-docset-table-lang-select {
+  font-family: inherit;
+  border: 2px solid #7AD4AA;
+  border-radius: 7px;
+  width: 100%;
+  color: #0C322C;
+  padding: .3rem 2rem .3rem .5rem;
+  background-color: #FFF;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url(chevron-down.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+table.ds-docset-table td.ds-docset-table-formats {
+  width: 30%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+table.ds-docset-table td.ds-docset-table-formats.no-date {
+  width: 40%;
+}
+
+a.ds-docset-table-link {
+  display: inline-block;
+  padding: .5rem;
+  margin-right: .5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #0C322C;
+  text-decoration: none;
+}
+
+a.ds-docset-table-link:hover,
+a.ds-docset-table-link:active,
+a.ds-docset-table-link:focus {
+  color: #34B262;
+  text-decoration: underline;
+}
+
+table.ds-docset-table td.ds-docset-table-date {
+  width: 10%;
+}
+
+.container {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 4rem;
+}
+
+/* Our own search form */
+
+.ds-search-form {
+  margin: 2rem 0 1rem;
+}
+
+.ds-search-form * {
+  font-family: 'work',Arial,sans-serif;
+  color: #0C322C;
+}
+
+.ds-search-input {
+  display: inline-block;
+  border: 2px solid #FF6A52;
+  border-radius: 2.3rem;
+  font-size: 1.6rem;
+  width: calc(100% - 10rem - 1rem);
+  padding: 1rem 2rem;
+}
+
+.ds-search-button {
+  display: inline-block;
+  background-color: #FF6A52;
+  color: #FFF;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 2.3rem;
+  width: 10rem;
+  padding: 1rem 2rem;
+}
+
+.ds-search-button:hover,
+.ds-search-button:focus,
+.ds-search-button:active {
+  background-color: #FF6A52;
+}
+
+/* Google Custom Search Overrides */
+
+div.gsc-control-cse {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+input.gsc-input {
+  height: 3rem !important;
+}
+
+button.gsc-search-button {
+  border-radius: 2.5rem;
+  height: 4rem;
+  line-height: 4rem;
+  position: relative;
+  top: 1px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  table.ds-docset-table tr td {
+    background-color: transparent;
+  }
+
+  table.ds-docset-table tr {
+    background-color: #F7F7F7;
+    border-radius: 2rem;
+    padding: 1rem;
+  }
+
+  table.ds-docset-table tr:nth-child(2n) {
+    background-color: #FFF;
+  }
+
+  table.ds-docset-table,
+  table.ds-docset-table > tr,
+  table.ds-docset-table > td {
+    display: block;
+  }
+
+  table.ds-docset-table {
+    clear: both;
+  }
+
+  table.ds-docset-table tr {
+    width: 100%;
+    margin-bottom: .75rem;
+    clear: both;
+  }
+
+  table.ds-docset-table tr::after {
+    content: '';
+    display: block;
+    width: 100%;
+    clear: both;
+  }
+
+  table.ds-docset-table td {
+    border: 0;
+  }
+
+  table.ds-docset-table td.ds-docset-table-title {
+    font-weight: bold;
+    width: 100%;
+  }
+
+  table.ds-docset-table td.ds-docset-table-language,
+  table.ds-docset-table td.ds-docset-table-formats,
+  table.ds-docset-table td.ds-docset-table-date {
+    width: 35% !important;
+    float: left;
+  }
+
+  table.ds-docset-table td.ds-docset-table-formats {
+    width: 65% !important;
+    float: right;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  h1.ds-title, h2.ds-docset-title {
+    font-size: 4rem;
+  }
+}
+
