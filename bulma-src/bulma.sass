@@ -1,4 +1,71 @@
 @charset "utf-8"
+
+$c_black: #000;
+$c_white: #FFF;
+
+$c_pine: #0C322C
+$c_jungle: #30BA78
+$c_seafoam: #7AD4AA
+
+$c_coral: #FF6A52
+$c_salmon: #FF8E77
+
+$c_fog: #F2F2F2
+$c_fog200: #E6E6E6
+$c_fog300: #D7D7D7
+
+$c_seafoam60: scale-color($c_seafoam, $c_white, 60%);
+$c_seafoam20: scale-color($c_seafoam, $c_white, 20%);
+
+$c_salmon60: scale-color($c_salmon, $c_white, 60%);
+$c_salmon20: scale-color($c_salmon, $c_white, 20%);
+
+$family-sans-serif: 'Work Sans', 'work', 'Helvetica Neue', 'Helvetica', 'FreeSans', 'Arial', sans-serif
+$primary: $c_coral
+$navbar-background-color: $c_pine
+
+$navbar-item-color: $c_white
+$navbar-item-hover-color: $c_white
+$navbar-item-hover-background-color: transparent
+$navbar-item-active-color: $c_white
+
+$navbar-item-second-color: $c_pine
+$navbar-item-second-hover-color: $c_pine
+$navbar-item-second-active-color: $c_pine
+
+$navbar-item-img-brand-pad: 0
+$navbar-item-img-brand-max-height: 3.8rem
+
+//$navbar-burger-color: $navbar-item-color !default
+
+//$navbar-tab-hover-background-color: transparent !default
+//$navbar-tab-hover-border-bottom-color: $link !default
+//$navbar-tab-active-color: $link !default
+//$navbar-tab-active-background-color: transparent !default
+//$navbar-tab-active-border-bottom-color: $link !default
+//$navbar-tab-active-border-bottom-style: solid !default
+//$navbar-tab-active-border-bottom-width: 3px !default
+
+//$navbar-dropdown-background-color: $scheme-main !default
+//$navbar-dropdown-border-top: 2px solid $border !default
+//$navbar-dropdown-offset: -4px !default
+$navbar-dropdown-arrow: $c_white
+$navbar-dropdown-radius: 0
+//$navbar-dropdown-z: 20 !default
+
+$navbar-dropdown-boxed-radius: 0
+//$navbar-dropdown-boxed-shadow: 0 8px 8px bulmaRgba($scheme-invert, 0.1), 0 0 0 1px bulmaRgba($scheme-invert, 0.1) !default
+
+//$navbar-dropdown-item-hover-color: $scheme-invert !default
+//$navbar-dropdown-item-hover-background-color: $background !default
+//$navbar-dropdown-item-active-color: $link !default
+//$navbar-dropdown-item-active-background-color: $background !default
+
+$footer-background-color: $c_pine
+$footer-color: $c_white
+
+// -- upstream --
+
 /*! bulma.io v0.8.2 | MIT License | github.com/jgthms/bulma */
 @import "sass/utilities/_all"
 @import "sass/base/_all"
@@ -7,3 +74,8 @@
 @import "sass/components/_all"
 @import "sass/grid/_all"
 @import "sass/layout/_all"
+@import "navbar2"
+
+// -- upstream end --
+
+

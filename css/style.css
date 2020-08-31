@@ -1,5 +1,7 @@
 main {
   font-weight: 400;
+  position: relative;
+  top: 5.8rem;
 }
 
 main a {
@@ -10,7 +12,7 @@ main a {
   background-color: #F7F7F7;
   font-weight: bold;
   text-align: center;
-  font-size: 1.5rem;
+/*  font-size: 1.5rem;*/
   padding: 2rem;
   margin: 1rem 0;
 }
@@ -27,14 +29,14 @@ main a {
 
 .ds-crumb {
   background-color: #F7F7F7;
-  padding: 1rem 0;
+  padding: 0rem 0;
   position: relative;
 }
 
 .ds-crumb span {
   display: inline-block;
   padding: 0;
-  font-size: 1.3rem;
+/*  font-size: 1.3rem;*/
   line-height: 2rem;
 }
 
@@ -61,7 +63,7 @@ div.ds-page-wrap {
 h1.ds-title {
   font-weight: 500;
   text-align: left;
-  font-size: 6rem;
+/*  font-size: 6rem;*/
   line-height: 1;
   margin-bottom: 30px;
   color: #0C322C;
@@ -80,7 +82,7 @@ h4.ds-select {
 div.ds-page-desc > p,
 div.ds-docset-desc > p {
   text-align: left;
-  font-size: 1.6rem;
+/*  font-size: 1.6rem;*/
   color: #0C322C;
   max-width: 90rem;
 }
@@ -95,7 +97,7 @@ div.ds-alternate-bg {
 
 div.ds-search-alternate-bg > .container,
 div.ds-alternate-bg > .container {
-  padding-top: 4rem;
+  padding: 2rem 0;
 }
 
 div.ds-boring-bg {
@@ -140,7 +142,7 @@ div.ds-select-list > a.ds-selected {
 div.ds-select-instruction {
   width: 100%;
   box-sizing: border-box;
-  font-size: 14px;
+/*  font-size: 14px;*/
   line-height: 2rem;
   /* let's assume there will only ever be a single line here. boundtofail. */
   position: absolute;
@@ -170,7 +172,7 @@ body.ds-fold-selector div.ds-select-list a:not(.ds-selected) {
 }
 
 h2.ds-docset-title {
-  font-size: 6rem;
+/*  font-size: 6rem;*/
   margin-bottom: 4rem;
   font-weight: 500;
   color: #0C322C;
@@ -194,13 +196,13 @@ h3.ds-docset-category-title {
 }
 
 div.ds-docset-category p {
-  font-size: 14px;
+/*  font-size: 14px;*/
 }
 
 table.ds-docset-table {
   width: 100%;
   margin-top: 2rem;
-  font-size: 14px;
+/*  font-size: 14px;*/
   clear: both;
 }
 
@@ -294,11 +296,11 @@ table.ds-docset-table td.ds-docset-table-date {
   width: 10%;
 }
 
-.container {
-  padding-left: 0;
-  padding-right: 0;
-  padding-bottom: 4rem;
-}
+/*.container {*/
+/*  padding-left: 0;*/
+/*  padding-right: 0;*/
+/*  padding-bottom: 4rem;*/
+/*}*/
 
 /* Our own search form */
 
@@ -315,7 +317,7 @@ table.ds-docset-table td.ds-docset-table-date {
   display: inline-block;
   border: 2px solid #FF6A52;
   border-radius: 2.3rem;
-  font-size: 1.6rem;
+/*  font-size: 1.6rem;*/
   width: calc(100% - 10rem - 1rem);
   padding: 1rem 2rem;
 }
@@ -324,7 +326,7 @@ table.ds-docset-table td.ds-docset-table-date {
   display: inline-block;
   background-color: #FF6A52;
   color: #FFF;
-  font-size: 1.6rem;
+/*  font-size: 1.6rem;*/
   font-weight: bold;
   border: none;
   border-radius: 2.3rem;
@@ -425,7 +427,7 @@ button.gsc-search-button {
   }
 
   h1.ds-title, h2.ds-docset-title {
-    font-size: 4rem;
+/*    font-size: 4rem;*/
   }
 }
 
